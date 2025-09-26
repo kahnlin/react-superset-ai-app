@@ -11,8 +11,11 @@ import "./App.css";
 // --- DASHBOARD_UUID 為 510k_Dashboards ==> b2a08dce-db25-4ed9-aebf-e6490ede7441  ---
 // --- DASHBOARD_UUID 為 data quality ==> a64e89f2-ce3e-49a2-8760-3c3b736a5084  ---
 const DASHBOARD_UUID = "b2a08dce-db25-4ed9-aebf-e6490ede7441"; 
-const SUPERSET_DOMAIN = "http://35.229.177.102:8088";
-const BACKEND_API_URL = "http://35.229.177.102:8000/api/guest-token";
+const SUPERSET_DOMAIN = "https://superset.medtech-db.online/";  //"http://35.229.177.102:8088";
+const BACKEND_API_URL =  "https://api.medtech-db.online/api/guest-token" //"http://35.229.177.102:8000/api/guest-token";
+
+
+
 
 function App() {
   const dashboardMountPoint = useRef(null);
