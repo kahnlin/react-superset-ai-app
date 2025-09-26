@@ -1,0 +1,25 @@
+/* src/App.css */
+
+/* 確保 App 容器能撐滿整個 #root */
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* 讓標題和儀表板垂直排列 */
+  text-align: left; /* 將文字對齊方式改回靠左 */
+}
+
+/* (可選) 為標題設定一些樣式 */
+.app-container h1 {
+  padding: 1rem 2rem;
+  margin: 0;
+  flex-shrink: 0; /* 防止標題在空間不足時被壓縮 */
+}
+
+/* (可選) 讓儀表板容器填滿剩餘空間 */
+.dashboard-container {
+  flex-grow: 1; /* 佔滿所有剩餘的垂直空間 */
+  width: 100%;
+  border: none; /* 移除邊框 */
+}
+
